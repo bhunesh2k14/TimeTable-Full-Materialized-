@@ -25,12 +25,10 @@ nav.nav-extended {
 
 .carousel .carousel-item{
   width:auto;
-  height:auto;
+  height: 600px;
 }
 
-#test1{
-    height: auto;
-}
+
 
 .page-footer {
   padding-bottom: 20px;
