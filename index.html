@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TimeTable</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	
+	
+
+</head>
+<body>
+	<header>
+		<nav class="nav-extended valign-wrapper">
+	        <div class="container center-align">
+	          <div class="nav-wrapper">
+	          	<a class="page-title">INFORMATION TECHNOLOGY</a>
+	          </div>
+	          <div class="nav-content">
+	          	<div style="font-size: 3em; font-family: jap;"><span><strong>TIME SCHEDULE</strong></span></div>
+	          	<div id="DATE" style="font-size: 1.5em;"></div>
+	            <div id="DAY" style="font-size: 1em;"></div>
+	          </div>       
+	        </div>
+        </nav>
+	</header>
+
+	<main>
+		<div class="row">
+			<ul class="tabs container">
+		        <li class="tab col s4"><a class="active" href="#test1">2nd Year</a></li>
+		        <li class="tab col s4"><a href="#test2">3rd Year</a></li>
+		        <li class="tab col s4"><a href="#test4">4th Year</a></li>
+		      </ul>
+		    
+		    <div id="test1" class="col s12">
+		    	<br>
+		    	<div class="container center-align" id="2ndAll" style="font-size: 2em;">
+		    		<div class="row">
+	    				<div class="col s6 center-align">
+	    					<span class="flow-text"><strong>Current Period: </strong><span id="2ndcurperiod"></span></span>
+	    				</div>
+	    				<div class="col s6 center-align">
+	    					<span class="flow-text" ><strong>Next Period: </strong><span id="2ndnextperiod"></span></span>
+	    				</div>
+		    		</div>
+		    	</div>
+		    	
+		    	
+			    <div class="container valign-wrapper">
+						<table class="reponsive-table striped centered ">
+				        <thead>
+				      <tr>
+				        <th>DAY/PERIOD</th>
+				        <th>I</th>
+				        <th>II</th>
+				        <th>III</th>
+				        <th>IV</th>
+				        <th>V</th>
+				          <th>VI</th>
+				          <th>VII</th>
+				          <th>VIII</th>
+				          <th>IX</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>MONDAY</td>
+				        <td>-</td>
+				        <td>Operating Systems</td>
+				        <td>Operating Systems</td>
+				        <td>Statistical Methods and Probability</td>
+				          <td>RECESS</td>
+				        <td>TOC</td>
+				        <td>TOC</td>
+				          <td>PCS</td>
+				          <td>PCS</td>
+
+				      </tr>
+				        <tr>
+				        <td>TUESDAY</td>
+				        <td>-</td>
+				        <td>CM - SN2</td>
+				        <td>DELD - SN2</td>
+				        <td>DELD - SN2</td>
+				          <td>RECESS</td>
+				        <td>BE - SN2</td>
+				        <td>DS/OOPS LAB</td>
+				          <td>DS/OOPS LAB</td>
+				          <td>DS/OOPS LAB</td>
+
+				      </tr>
+				        <tr>
+				        <td>WEDNESSDAY</td>
+				        <td>FREE </td>
+				        <td>BE/OOPS LAB</td>
+				        <td>BE/OOPS LAB</td>
+				        <td>BE/OOPS LAB</td>
+				          <td>RECESS</td>
+				        <td>MIII - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>DS - IT1</td>
+				          <td>CM - IT1</td>
+
+				      </tr>
+				        <tr>
+				        <td>THURSDAY</td>
+				        <td>CM - IT1</td>
+				        <td>DELD - IT1</td>
+				        <td>DELD - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>RECESS</td>
+				        <td>MIII - IT2</td>
+				        <td>BE/DS LAB</td>
+				          <td>BE/DS LAB</td>
+				          <td>BE/DS LAB</td>
+
+				      </tr>
+				        <tr>
+				        <td>FRIDAY</td>
+				        <td>FREE</td>
+				        <td>FREE</td>
+				        <td>MIII - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>RECESS</td>
+				        <td>BE - IT1</td>
+				        <td>BE - IT1</td>
+				          <td>OOPS - IT1</td>
+				          <td>OOPS - IT1</td>
+
+				      </tr>
+				    </tbody>
+				      </table><br>
+				</div></div></div>
+		    <div id="test2" class="col s12">
+		    	<br>
+		    	<div class="container center-align" id="3rdAll" style="font-size: 2em;">
+		    		<div class="row">
+	    				<div class="col s6 center-align">
+	    					<span class="flow-text"><strong>Current Period: </strong><span id="3rdcurperiod"></span></span>
+	    				</div>
+	    				<div class="col s6 center-align">
+	    					<span class="flow-text" ><strong>Next Period: </strong><span id="3rdnextperiod"></span></span>
+	    				</div>
+		    		</div>
+		    	</div>
+
+		    	<div class="container ">
+						<table class="reponsive-table striped centered">
+				        <thead>
+				      <tr>
+				        <th>DAY/PERIOD</th>
+				        <th>I</th>
+				        <th>II</th>
+				        <th>III</th>
+				        <th>IV</th>
+				        <th>V</th>
+				          <th>VI</th>
+				          <th>VII</th>
+				          <th>VIII</th>
+				          <th>IX</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>MONDAY</td>
+				        <td>DS - SN3</td>
+				        <td>CM - SN3</td>
+				        <td>OOPS - SN3</td>
+				        <td>MIII - SN3</td>
+				          <td>RECESS</td>
+				        <td>PD - SN3</td>
+				        <td>PD - SN3</td>
+				          <td>BE - SN3</td>
+				          <td>FREE</td>
+
+				      </tr>
+				        <tr>
+				        <td>TUESDAY</td>
+				        <td>OOPS - SN2</td>
+				        <td>CM - SN2</td>
+				        <td>DELD - SN2</td>
+				        <td>DELD - SN2</td>
+				          <td>RECESS</td>
+				        <td>BE - SN2</td>
+				        <td>DS/OOPS LAB</td>
+				          <td>DS/OOPS LAB</td>
+				          <td>DS/OOPS LAB</td>
+
+				      </tr>
+				        <tr>
+				        <td>WEDNESSDAY</td>
+				        <td>FREE </td>
+				        <td>BE/OOPS LAB</td>
+				        <td>BE/OOPS LAB</td>
+				        <td>BE/OOPS LAB</td>
+				          <td>RECESS</td>
+				        <td>MIII - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>DS - IT1</td>
+				          <td>CM - IT1</td>
+
+				      </tr>
+				        <tr>
+				        <td>THURSDAY</td>
+				        <td>CM - IT1</td>
+				        <td>DELD - IT1</td>
+				        <td>DELD - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>RECESS</td>
+				        <td>MIII - IT2</td>
+				        <td>BE/DS LAB</td>
+				          <td>BE/DS LAB</td>
+				          <td>BE/DS LAB</td>
+
+				      </tr>
+				        <tr>
+				        <td>FRIDAY</td>
+				        <td>FREE</td>
+				        <td>FREE</td>
+				        <td>MIII - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>RECESS</td>
+				        <td>BE - IT1</td>
+				        <td>BE - IT1</td>
+				          <td>OOPS - IT1</td>
+				          <td>OOPS - IT1</td>
+
+				      </tr>
+				    </tbody>
+				      </table>
+				</div></div></div>
+		    <div id="test4" class="col s12">
+		    	<br>
+		    	<div class="container center-align" id="4thAll" style="font-size: 2em;">
+		    		<div class="row">
+	    				<div class="col s6 center-align">
+	    					<span class="flow-text"><strong>Current Period: </strong><span id="4thcurperiod"></span></span>
+	    				</div>
+	    				<div class="col s6 center-align">
+	    					<span class="flow-text" ><strong>Next Period: </strong><span id="4thnextperiod"></span></span>
+	    				</div>
+		    		</div>
+		    	</div>
+		    	<div class="container valign-wrapper">
+						<table class="striped centered">
+				        <thead>
+				      <tr>
+				        <th>DAY/PERIOD</th>
+				        <th>I</th>
+				        <th>II</th>
+				        <th>III</th>
+				        <th>IV</th>
+				        <th>V</th>
+				          <th>VI</th>
+				          <th>VII</th>
+				          <th>VIII</th>
+				          <th>IX</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>MONDAY</td>
+				        <td>DS - SN3</td>
+				        <td>CM - SN3</td>
+				        <td>OOPS - SN3</td>
+				        <td>MIII - SN3</td>
+				          <td>RECESS</td>
+				        <td>PD - SN3</td>
+				        <td>PD - SN3</td>
+				          <td>BE - SN3</td>
+				          <td>FREE</td>
+
+				      </tr>
+				        <tr>
+				        <td>TUESDAY</td>
+				        <td>OOPS - SN2</td>
+				        <td>CM - SN2</td>
+				        <td>DELD - SN2</td>
+				        <td>DELD - SN2</td>
+				          <td>RECESS</td>
+				        <td>BE - SN2</td>
+				        <td>DS/OOPS LAB</td>
+				          <td>DS/OOPS LAB</td>
+				          <td>DS/OOPS LAB</td>
+
+				      </tr>
+				        <tr>
+				        <td>WEDNESSDAY</td>
+				        <td>FREE </td>
+				        <td>BE/OOPS LAB</td>
+				        <td>BE/OOPS LAB</td>
+				        <td>BE/OOPS LAB</td>
+				          <td>RECESS</td>
+				        <td>MIII - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>DS - IT1</td>
+				          <td>CM - IT1</td>
+
+				      </tr>
+				        <tr>
+				        <td>THURSDAY</td>
+				        <td>CM - IT1</td>
+				        <td>DELD - IT1</td>
+				        <td>DELD - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>RECESS</td>
+				        <td>MIII - IT2</td>
+				        <td>BE/DS LAB</td>
+				          <td>BE/DS LAB</td>
+				          <td>BE/DS LAB</td>
+
+				      </tr>
+				        <tr>
+				        <td>FRIDAY</td>
+				        <td>FREE</td>
+				        <td>FREE</td>
+				        <td>MIII - IT1</td>
+				        <td>DS - IT1</td>
+				          <td>RECESS</td>
+				        <td>BE - IT1</td>
+				        <td>BE - IT1</td>
+				          <td>OOPS - IT1</td>
+				          <td>OOPS - IT1</td>
+
+				      </tr>
+				    </tbody>
+				      </table>
+				</div></div>
+	    </div>
+    
+	</main>
+	<footer class="page-footer"><div><div class="container">Designed and Developed By<a href="http://www.instagram.com/im_bhunesh"> Bhuwneshwar Anand.</a></div></div></footer>
+    
+
+	<script>
+	$(document).ready(function(){
+    $('ul.tabs').tabs({
+      swipeable : true,
+      
+    });
+  });
+</script>
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/2ndyear.js"></script>
+  <script type="text/javascript" src="./js/3rdyear.js"></script>
+  <script type="text/javascript" src="./js/4thyear.js"></script>
+  
+	
+	
+	
+</body>
+
+
+
+</html>
